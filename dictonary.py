@@ -3,8 +3,8 @@
 portfolio={}
 budget=int(input("enter your budget :"))
 for i in range(3):
-    name=input("enter the name of the stock:\n")
-    percent=int(input("enter allocation percentage:\n"))
+    name=input("enter the name of the stock:")
+    percent=int(input("enter allocation percentage:"))
     
     amount=(percent/100)*budget
     
@@ -12,6 +12,7 @@ for i in range(3):
 
 
 print("\nBudget Allocation:")
+print(portfolio)
 
 for stock in portfolio:
     print(stock, ":", portfolio[stock])
